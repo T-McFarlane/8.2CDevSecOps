@@ -70,7 +70,7 @@ pipeline {
                         subject: "Jenkins - ${env.JOB_NAME} #${env.BUILD_NUMBER} - Security Scan: ${currentBuild.currentResult}",
                         body: "The 'NPM Audit (Security Scan)' stage of ${env.JOB_NAME} build #${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}.\n\nSee the attached console log for the full list of vulnerabilities found.\n\nBuild URL: ${env.BUILD_URL}",
                         to: "${EMAIL_RECIPIENT}",
-                        attachLog: true
+                        attachLog: false
                     )
                 }
             }
