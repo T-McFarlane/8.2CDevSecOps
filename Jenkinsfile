@@ -47,7 +47,7 @@ pipeline {
                         subject: "Jenkins - ${env.JOB_NAME} #${env.BUILD_NUMBER} - Run Tests: ${currentBuild.currentResult}",
                         body: "The 'Run Tests' stage of ${env.JOB_NAME} build #${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}.\n\nSee the attached console log for full details.\n\nBuild URL: ${env.BUILD_URL}",
                         to: "${EMAIL_RECIPIENT}",
-                        attachLog: true
+                        attachLog: false
                     )
                 }
             }
