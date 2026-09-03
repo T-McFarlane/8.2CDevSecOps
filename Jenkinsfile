@@ -1,5 +1,5 @@
 /*
- * SIT223/SIT753 - Credit Task
+ * SIT223 - 8.2C
  * Part 1, Task 2: DevSecOps Basics (nodejs-goof)
  * Part 2, Task 2: Extended Email Notification Plugin
  *
@@ -21,6 +21,10 @@ pipeline {
  
     environment {
         EMAIL_RECIPIENT = 'thomas.p.mcfarlane@gmail.com'
+    }
+ 
+ triggers {
+        pollSCM('H/5 * * * *')   // check GitHub for new commits every 5 minutes
     }
  
     stages {
