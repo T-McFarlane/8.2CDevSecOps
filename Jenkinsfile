@@ -10,7 +10,7 @@
  * coverage report, and runs `npm audit` as a security scan. It then extends
  * that pipeline (Part 2, Task 2) by emailing the status + attached console
  * log at the end of the Run Tests and NPM Audit (Security Scan) stages.
- *
+ */
  
 pipeline {
     agent any
