@@ -14,6 +14,10 @@
  
 pipeline {
     agent any
+
+  tools {
+        nodejs 'NodeJS-18'   // must match the name you gave it in step 2
+    }
  
     environment {
         EMAIL_RECIPIENT = 'thomas.p.mcfarlane@gmail.com'
