@@ -20,7 +20,7 @@ pipeline {
     }
  
     environment {
-        EMAIL_RECIPIENT = 'thomas.p.mcfarlane@gmail.com'
+        EMAIL_RECIPIENT = 'thomas.p.mcfarlane@gmail.com' // set notification delivery E-mail address
     }
  
  triggers {
