@@ -3,7 +3,7 @@
  * Part 1, Task 2: DevSecOps Basics (nodejs-goof)
  * Part 2, Task 2: Extended Email Notification Plugin
  *
- * Author: Tom McFarlane
+ * Author: Thomas McFarlane
  *
  * This pipeline clones the nodejs-goof project from "8.2CDevSecOps"
  * GitHub repo, installs its dependencies, runs its test script, generates a
