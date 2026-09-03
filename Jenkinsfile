@@ -20,7 +20,7 @@ pipeline {
     }
  
     environment {
-        EMAIL_RECIPIENT = 's225644394@deakin.edu.au'
+        EMAIL_RECIPIENT = 'thomas.p.mcfarlane@gmail.com'
     }
  
     stages {
@@ -47,7 +47,7 @@ pipeline {
                         subject: "Jenkins - ${env.JOB_NAME} #${env.BUILD_NUMBER} - Run Tests: ${currentBuild.currentResult}",
                         body: "The 'Run Tests' stage of ${env.JOB_NAME} build #${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}.\n\nSee the attached console log for full details.\n\nBuild URL: ${env.BUILD_URL}",
                         to: "${EMAIL_RECIPIENT}",
-                        attachLog: false
+                        attachLog: true
                     )
                 }
             }
@@ -70,7 +70,7 @@ pipeline {
                         subject: "Jenkins - ${env.JOB_NAME} #${env.BUILD_NUMBER} - Security Scan: ${currentBuild.currentResult}",
                         body: "The 'NPM Audit (Security Scan)' stage of ${env.JOB_NAME} build #${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}.\n\nSee the attached console log for the full list of vulnerabilities found.\n\nBuild URL: ${env.BUILD_URL}",
                         to: "${EMAIL_RECIPIENT}",
-                        attachLog: false
+                        attachLog: true
                     )
                 }
             }
