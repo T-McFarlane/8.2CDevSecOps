@@ -20,7 +20,7 @@ pipeline {
     }
  
     environment {
-        EMAIL_RECIPIENT = 'thomas.p.mcfarlane@gmail.com'
+        EMAIL_RECIPIENT = 's225644394@deakin.edu.au'
     }
  
     stages {
