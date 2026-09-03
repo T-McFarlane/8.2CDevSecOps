@@ -16,7 +16,7 @@ pipeline {
     agent any
 
   tools {
-        nodejs 'NodeJS-18'   // must match the name you gave it in step 2
+        nodejs 'NodeJS-a'
     }
  
     environment {
